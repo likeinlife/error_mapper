@@ -1,0 +1,86 @@
+[project]
+name = "error-mapper"
+version = "0.0.1"
+description = "Decorator error mapper"
+authors = [
+    { name = "likeinlife", email = "likeinlife@outlook.com" }
+]
+dependencies = []
+readme = "README.md"
+requires-python = ">= 3.11"
+license = "MIT"
+keywords = ["error mapping", "decorator"]
+urls = { Homepage = "https://github.com/likeinlife/error-mapper" }
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "ruff>=0.5.3",
+    "mypy>=1.10.1",
+    "pre-commit>=3.7.1",
+    "pytest>=8.2.2",
+    "pytest-asyncio>=0.23.8",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/error_mapper"]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+    # Allow boolean type in func arguments
+    "FBT001",
+    # Allow PEP585 annotations like dict[str, str]
+    "FA102",
+    # No blankline before class
+    "D203",
+    # Multiline string summary should start at the first line
+    "D213",
+    # Allow no-typehints
+    "ANN101",
+    "ANN102",
+    # Disable doc-string rules
+    "D100",
+    "D101",
+    "D102",
+    "D103",
+    "D104",
+    "D105",
+    "D107",
+    "D407",
+    "D406",
+    # Allow type: ignore
+    "PGH003",
+    # Useless
+    "FBT",
+    "FA100",
+    "B904",
+    "COM812",
+    "TD003",
+    "FIX002",
+]
+exclude = []
+
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = []
+"tests/**/*.py" = ["D", "S", "ANN", "PLR"]
+
+[tool.mypy]
+ignore_missing_imports = true
+follow_imports = "normal"
+check_untyped_defs = true
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
