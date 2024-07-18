@@ -1,6 +1,6 @@
 [project]
 name = "error-mapper"
-version = "0.0.1"
+version = "0.1.0"
 description = "Decorator error mapper"
 authors = [
     { name = "likeinlife", email = "likeinlife@outlook.com" }
@@ -10,8 +10,7 @@ readme = "README.md"
 requires-python = ">= 3.11"
 license = "MIT"
 keywords = ["error mapping", "decorator"]
-urls = { Homepage = "https://github.com/likeinlife/error-mapper" }
-
+urls = { Homepage = "https://github.com/likeinlife/error_mapper" }
 
 [build-system]
 requires = ["hatchling"]

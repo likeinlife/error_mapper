@@ -2,6 +2,10 @@
 
 Decorator error mapper
 
+# Installing
+
+`pip install error-mapper`
+
 # Example
 
 ## Error map
@@ -42,10 +46,6 @@ error_map: ErrorMapTypeExecute = {
 def fn() -> None:
     raise SuppressedError
 ```
-
-# Installing
-
-`pip install error-mapper`
 
 # Testing, linting, formatting
 
