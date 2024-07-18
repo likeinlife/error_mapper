@@ -43,3 +43,12 @@ def fn() -> None:
     raise SuppressedError
 ```
 
+# Installing
+
+`pip install error-mapper`
+
+# Testing, linting, formatting
+
+- `rye test`
+- `rye lint`
+- `rye fmt`
