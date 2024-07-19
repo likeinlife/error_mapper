@@ -8,3 +8,5 @@ RetType = tp.TypeVar("RetType")
 ErrorMapType: tp.TypeAlias = dict[type[Exception], type[Exception]]
 ErrorMapTypeExecute: tp.TypeAlias = dict[type[Exception], OnErrorExecuteFunction]
 FuncType: tp.TypeAlias = tp.Callable[PARAM, RetType]
+
+_UNSET: tp.Any = object()

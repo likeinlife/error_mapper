@@ -3,6 +3,8 @@ import typing as tp
 
 from error_mapper.types import PARAM, ErrorMapType, RetType
 
+from ._process_error import process_error
+
 
 def async_wrapper(
     func: tp.Callable[PARAM, tp.Awaitable[RetType]],
@@ -14,6 +16,6 @@ def async_wrapper(
         try:
             return await func(*args, **kwargs)
         except Exception as e:
-            raise error_map.get(type(e), default) from e
+            process_error(error_map, e, default)
 
     return _wrapper
