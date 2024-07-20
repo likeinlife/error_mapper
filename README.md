@@ -1,6 +1,12 @@
-# Description
+# Error-mapper
 
-Decorator error mapper
+[![image](https://img.shields.io/pypi/v/error-mapper.svg)](https://pypi.python.org/pypi/error-mapper)
+[![image](https://img.shields.io/pypi/l/error-mapper.svg)](https://github.com/likeinlife/error-mapper/blob/main/LICENSE)
+<a href="http://mypy-lang.org/" target="_blank"><img src="https://img.shields.io/badge/mypy-checked-1F5082.svg" alt="Mypy checked"></a>
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
+[![image](https://img.shields.io/pypi/pyversions/error-mapper.svg)](https://pypi.python.org/pypi/error-mapper)
+
+Python error mapper based on decorators.
 
 # Installing
 
