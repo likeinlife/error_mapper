@@ -1,6 +1,6 @@
 [project]
 name = "error-mapper"
-version = "1.0.0"
+version = "1.0.1"
 description = "Decorator error mapper"
 authors = [
     { name = "likeinlife", email = "likeinlife@outlook.com" }
@@ -10,6 +10,17 @@ readme = "README.md"
 requires-python = ">=3.11"
 license = { file = "LICENSE" }
 keywords = ["error mapping", "decorator"]
+classifiers = [
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
 
 [project.urls]
 Homepage = "https://pypi.org/project/error-mapper/"
