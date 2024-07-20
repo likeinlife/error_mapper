@@ -1,6 +1,6 @@
 [project]
 name = "error-mapper"
-version = "1.0.2"
+version = "1.0.3"
 description = "Decorator error mapper"
 authors = [
     { name = "likeinlife", email = "likeinlife@outlook.com" }
@@ -8,7 +8,7 @@ authors = [
 dependencies = []
 readme = "README.md"
 requires-python = ">=3.11"
-license = { file = "LICENSE" }
+license = "MIT"
 keywords = ["error mapping", "decorator"]
 classifiers = [
   "Intended Audience :: Developers",
