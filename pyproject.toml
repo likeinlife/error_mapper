@@ -114,7 +114,6 @@ exclude_also = [
     "class .*\\bProtocol\\):",
     "@(abc\\.)?abstractmethod",
     ]
-exclude_empty = true
 omit = [
     # omit anything in a .local directory anywhere
     "*/.local/*",
