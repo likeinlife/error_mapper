@@ -9,10 +9,7 @@ from ._sync import sync_wrapper
 def suppress_to_none(
     exception: type[Exception],
 ) -> tp.Callable[[FuncType[PARAM, RetType]], FuncType[PARAM, RetType | None]]:
-    """Suppress error and return None instead.
-
-    If no mapping found, raise default exception.
-    """
+    """Suppress error and return None instead."""
 
     def decorator(fn: FuncType[PARAM, RetType]) -> FuncType[PARAM, RetType | None]:
         return sync_wrapper(exception, fn)
@@ -23,10 +20,7 @@ def suppress_to_none(
 def suppress_to_none_async(
     exception: type[Exception],
 ) -> tp.Callable[[FuncType[PARAM, tp.Awaitable[RetType]]], FuncType[PARAM, tp.Awaitable[RetType | None]]]:
-    """Suppress error and return None instead.
-
-    If no mapping found, raise default exception.
-    """
+    """Suppress error and return None instead."""
 
     def decorator(fn: FuncType[PARAM, tp.Awaitable[RetType]]) -> FuncType[PARAM, tp.Awaitable[RetType | None]]:
         return async_wrapper(exception, fn)
