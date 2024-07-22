@@ -1,6 +1,6 @@
 [project]
 name = "error-mapper"
-version = "1.0.3"
+version = "1.0.4"
 description = "Decorator error mapper"
 authors = [
     { name = "likeinlife", email = "likeinlife@outlook.com" }

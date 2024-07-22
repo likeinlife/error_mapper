@@ -53,6 +53,27 @@ def fn() -> None:
     raise SuppressedError
 ```
 
+## Suppress error to None
+
+```python
+from error_mapper import suppress_to_none
+
+
+class SuppressedError(Exception): ...
+
+
+class RaiseError(Exception): ...
+
+
+@suppress_to_none(SuppressedError)
+def fn() -> None:
+    raise SuppressedError
+
+
+assert fn() is None
+
+```
+
 # Testing, linting, formatting
 
 - `rye test`
