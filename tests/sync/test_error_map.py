@@ -1,7 +1,7 @@
 import pytest
 from error_mapper import ErrorMapType, error_map_decorator
 
-from .mocks import (
+from tests.mocks import (
     DefaultError,
     Raise1Error,
     Raise2Error,
